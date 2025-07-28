@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Animes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Animes</h1>
+
+    <section id="form-section">
+        <h2>Agregar / Editar Anime</h2>
+        <form id="anime-form">
+            <input type="hidden" id="anime-id">
+            <label>Nombre: <input type="text" id="nombre" required></label>
+            <label>Género: <input type="text" id="genero" required></label>
+            <label>Año: <input type="text" id="año" required></label>
+            <label>Autor: <input type="text" id="autor" required></label>
+            <button type="submit">Guardar</button>
+        </form>
+    </section>
+
+    <section id="search-section">
+        <h2>Buscar por Nombre</h2>
+        <input type="text" id="buscar-nombre" placeholder="Nombre del anime">
+        <button onclick="buscarPorNombre()">Buscar</button>
+        <div id="resultado-busqueda"></div>
+    </section>
+
+    <section id="list-section">
+        <h2>Lista de Animes</h2>
+        <ul id="anime-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
